@@ -209,9 +209,12 @@ Puedes repasarlo [aquí](https://es.khanacademy.org/math/ap-calculus-ab/ab-diffe
    - **e)** $f(x) = \ln\left[\left(2x^2 + 3\right)^5 \cdot \sqrt{\sin x}\right]$
 
 
-<div hidden>
+<br><br>
 
-## **5. Regla de L’Hôpital**
+
+## Regla de L’Hôpital
+
+<br><span class="grey3 size70">🔁 Repaso:</span>
 
 Se usa en límites indeterminados como $\frac{0}{0}$ o $\frac{\infty}{\infty}$.
 
@@ -219,13 +222,28 @@ $$
 \lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)} \quad \text{(si el límite existe)}
 $$
 
-### **Ejemplo:**
+**Ejemplo:**
 
 $$
 \lim_{x \to 0} \frac{\sin x}{x} = \frac{\cos x}{1} = 1
 $$
 
----
+También puedes repasarlo [aquí](https://www.youtube.com/watch?v=vJ5V9U2mMP8&t=483s).
+
+<br><span class="grey3 size70">📝 Práctica:</span>
+
+Resuelve:
+
+1. $\lim_{x \to \infty} \frac{x}{e^x}$
+2. $\lim_{x \to 0} \frac{\tan(3x)}{x}$
+3. $\lim_{x \to 0} \frac{e^{2x} - 1}{\sin x}$
+4. $\lim_{x \to 0} \frac{\ln(\cos(2x))}{x^2}$
+5. $\lim_{x \to 0} \frac{e^{\tan x} - 1 - \tan x}{x^2}$
+6. $\lim_{x \to 0} \frac{\ln(1 + \sin^2(2x))}{x^2}$
+7. $\lim_{x \to 0} \frac{e^{\sin^2(2x)} - 1}{x^2}$
+
+
+<div hidden>
 
 ## **6. Aplicaciones: Máximos y mínimos**
 
@@ -245,7 +263,7 @@ $f(x) = -x^2 + 4x$
 * $f'(x) = 0 \Rightarrow x = 2$
 * Máximo relativo en $x=2$, ya que cambia de positivo a negativo.
 
----
+
 
 ## **7. Ejercicios**
 
