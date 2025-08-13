@@ -212,7 +212,7 @@ Puedes repasarlo [aquí](https://es.khanacademy.org/math/ap-calculus-ab/ab-diffe
 <br><br>
 
 
-## Regla de L’Hôpital
+## 6. Regla de L’Hôpital
 
 <br><span class="grey3 size70">🔁 Repaso:</span>
 
@@ -243,19 +243,44 @@ Resuelve:
 7. $\lim_{x \to 0} \frac{e^{\sin^2(2x)} - 1}{x^2}$
 
 
-<div hidden>
+<br><br>
 
-## **6. Aplicaciones: Máximos y mínimos**
 
-Se usa la derivada para encontrar **extremos relativos**.
+## 7. Máximos y mínimos relativos de una función
 
-### **Pasos:**
+<br><span class="grey3 size70">🔁 Repaso:</span>
 
-1. Derivar la función: $f'(x)$
-2. Igualar a cero: $f'(x) = 0$
-3. Analizar los signos de la derivada antes y después de cada raíz.
+- **Máximo relativo**: un punto donde el valor de la función es mayor que los valores cercanos a él.
+- **Mínimo relativo**: un punto donde el valor de la función es menor que los valores cercanos a él.
+- Puedes repasarlo [aquí](https://www.youtube.com/watch?v=K5DrUur2HgU&t=267s)
 
-### **Ejemplo:**
+<span hidden>Image</span>
+   <center>![](deriv_max_min_intro.png){width=400px}</center>
+   <center><span class="grey3 size70">Fuente: Khan Academy</span></center>
+
+- **Punto crítico**: Un valor $x_0$ es un punto crítico de la función $f(x)$ si, en ese punto, la pendiente de la gráfica es **cero** o **no existe**.
+   + **Pendiente nula**: la recta tangente en ese punto es horizontal, lo que equivale a que la derivada vale cero.
+   + **Pendiente no definida**: la gráfica presenta un cambio brusco de dirección (como una cúspide) o una tangente vertical, por lo que no se puede asignar un valor de pendiente.
+
+- Se puede afirmar: Si una función tiene un máximo o mínimo relativo en $x_0$, entonces $x_0$ es un punto crítico, es decir, $f'(x_0) = 0$ **o** $f'(x_0)$ no existe.
+
+- Puedes repasarlo también [aquí](https://es.khanacademy.org/math/ap-calculus-ab/ab-diff-analytical-applications-new/ab-5-4/v/testing-critical-points-for-local-extrema)
+
+<span hidden>Image</span>
+   <center>![](deriv_max_min_criterio_deriv1.png){width=400px}</center>
+   <center><span class="grey3 size70">Fuente: Khan Academy</span></center>
+
+- Pasos para encontrar máximos o mínimos relatios de una función:
+   + Derivar la función: $f'(x)$
+   + Igualar a cero: $f'(x) = 0$
+   + Analizar los signos de la derivada antes y después del punto crítico
+
+- Análisis de los signos de la derivada:
+   + Si $f'(x)$ **cambia de + a −** en $x_0$ → **máximo**.
+   + Si $f'(x)$ **cambia de − a +** en $x_0$ → **mínimo**.
+   + Si no cambia de signo → no hay máximo ni mínimo.
+
+**Ejemplo:**
 
 $f(x) = -x^2 + 4x$
 
@@ -263,73 +288,67 @@ $f(x) = -x^2 + 4x$
 * $f'(x) = 0 \Rightarrow x = 2$
 * Máximo relativo en $x=2$, ya que cambia de positivo a negativo.
 
+Puedes repasar esto también [aquí](https://es.khanacademy.org/math/ap-calculus-ab/ab-diff-analytical-applications-new/ab-5-4/v/finding-relative-maximum-example)
+
+<br><span class="grey3 size70">📝 Práctica:</span>
+
+Encontrar los puntos críticos de las siguientes funciones y analizar si corresponden a máximos o mínimos relativos
+
+a. $f(x) = x^2 - 4x + 3$
+b. $f(x) = x^3 - 3x^2 + 2$
+c. $g(x) = -2x^3 + 3x^2 + 12x - 5$
 
 
-## **7. Ejercicios**
+<br><br>
 
-### **7.1. Derivadas por definición**
+## 8. Problemas de optimización
 
-1. Calcula la derivada de $f(x) = 3x + 1$ usando la definición.
-2. Calcula la derivada de $f(x) = x^2 + 2x$ en $x = 1$.
 
-### **7.2. Reglas de derivación**
+<br><span class="grey3 size70">🔁 Repaso:</span>
 
-3. Deriva $f(x) = x^3 - 5x + 6$
-4. Deriva $f(x) = \frac{1}{x}$
-5. Deriva $f(x) = e^{2x} + \ln(x^2)$
+**Problema:** Un granjero quiere construir un corral rectangular junto a un muro, de modo que no necesite cercar el lado que da al muro. Si tiene 48 metros de cerca para usar en los otros tres lados, ¿qué dimensiones debe tener el corral para que el área sea máxima?
 
-### **7.3. Regla de la cadena**
 
-6. Deriva $f(x) = \sqrt{3x + 2}$
-7. Deriva $f(x) = \ln(\sin x)$
+**Planteo**
 
-### **7.4. L’Hôpital**
+* Sea $x$ el ancho (lado perpendicular al muro).
+* Sea $y$ el largo (lado paralelo al muro).
 
-8. $\lim_{x \to 0} \frac{e^x - 1}{x}$
-9. $\lim_{x \to \infty} \frac{x}{e^x}$
-
-### **7.5. Máximos y mínimos**
-
-10. Determina los extremos relativos de $f(x) = x^3 - 3x^2 + 2$
-
----
-
-## **8. Problemas desafiantes**
-
-### **A. Función no explícita**
-
-> Sea $x^2 + y^2 = 25$. Halla $\frac{dy}{dx}$.
-
-(Sugerencia: derivación implícita)
-
----
-
-### **B. Optimización**
-
-> Una hoja rectangular tiene que tener 20 cm² de área. ¿Qué dimensiones minimizan el perímetro?
-
-(Sugerencia: usar función de perímetro y derivar)
-
----
-
-### **C. Límite difícil**
+El lado junto al muro no necesita cerca. Entonces, el perímetro con cerca es:
 
 $$
-\lim_{x \to 0} \frac{\ln(1 + \sin x)}{x}
+2x + y = 48
 $$
 
-(Usar L’Hôpital o expansión)
+Queremos maximizar el área:
 
----
+$$
+A = x \cdot y
+$$
 
-## **9. Recomendaciones de estudio**
+**Resolución**
 
-* **Visualizá** la función y su tangente en gráficos.
-* **Comprobá tus resultados** derivando con software (GeoGebra, Desmos).
-* **Resolvé primero a mano**, luego verificá con calculadora o app.
-* **Practicá cada tipo de ejercicio por separado.**
+- Expresar $y$ en función de $x$: $y = 48 - 2x$
+- Función área en función de $x$: $A(x) = x \cdot (48 - 2x) = 48x - 2x^2$
+- Derivar $A(x)$: $A'(x) = 48 - 4x$
+- Encontrar puntos críticos: $A'(x) = 0 \implies 48 - 4x = 0 \implies x = 12$
+- Determinar máximo o mínimo:
+   + Antes de x=12: $A'(10) = 48 - 40 = 8$ Signo positivo
+   + Luego de x=12: $A'(14) = 48 - 56 = -8$ Signo negativo
+   + Como pasa de + a - hay un **máximo relativo**
+- Encontrar $y$: $y = 48 - 2(12) = 48 - 24 = 24$
 
-</div>
+**Respuesta:**
+
+Para maximizar el área, el corral debe tener:
+
+- Ancho $x = 12$ metros
+- Largo $y = 24$ metros
+
+<br><span class="grey3 size70">📝 Práctica:</span>
+
+Resolver el siguiente problema: Se desea fabricar una caja sin tapa con un volumen de 32 m³. La base es cuadrada. ¿Qué dimensiones minimizan la cantidad de material usado?
+
 
 
 <!-- HTML style definitions -->
