@@ -201,6 +201,282 @@ $$
 Estas propiedades permiten simplificar cálculos y entender el **significado geométrico** de la integral como área.
 
 
+<br><span class="grey3 size70">📝 Práctica:</span>
+
+Resuelve aplicando propiedades:
+
+**1.** $\int_2^2 (x^2+1)\,dx + \int_0^1 x\,dx$
+
+**2.** Usa la **linealidad** para separar: $\int_0^1 (3x^2 + 4x)\,dx$
+
+**3.** Verificar la siguiente igualdad resolviendo ambos miembros y comprobando la igualdad: $\int_0^4 x\,dx = \int_0^2 x\,dx + \int_2^4 x\,dx$
+
+**4.** Verificar la propiedad de orden para $f(x) = x$ y $g(x) = x+1$ en el intervalo $[0,2]$, demostrando que: $\int_0^2 f(x)\,dx \; < \; \int_0^2 g(x)\,dx$
+
+
+<br><br>
+
+
+## 6. Integral indefinida
+
+<br><span class="grey3 size70">🔁 Repaso:</span>
+
+La **integral indefinida** de una función es el conjunto de sus **antiderivadas** o **primitivas**:
+
+$$
+\int f(x)\,dx = F(x) + C \quad \text{con } F'(x)=f(x).
+$$
+
+**Ejemplo:**
+
+$$
+\int x^2 \, dx = \tfrac{x^3}{3} + C
+$$
+
+**Diferencia con la definida:**
+
+* **Definida**: da un **número** (área entre $a$ y $b$).
+* **Indefinida**: da una **función** (todas las primitivas).
+
+También puedes repasar esto [aquí.](https://www.youtube.com/watch?v=Is6dH965Q6w&t=224s)
+
+<br><span class="grey3 size70">📝 Práctica:</span>
+
+**a)** Encontrar estas integrales indefinidas:
+
+**1.** $\int 3,75x \, dx$
+**2.** $\int 3\cos(x)\, dx$
+**3.** $\int \frac{6}{x}\, dx$
+
+**b)** Resuelve ahora estos [ejercicios](https://es.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-7/e/antiderivatives).
+
+
+<br><br>
+
+
+## 7. Reglas básicas para encontrar integrales indefinidas
+
+### 7a) Regla de la potencia inversa y propiedades
+
+<br><span class="grey3 size70">🔁 Repaso:</span>
+
+$$
+\int x^n \, dx = \frac{x^{n+1}}{n+1} + C \quad \text{(si \(n \neq -1\))}.
+$$
+
+Puedes repasar [aquí](https://www.youtube.com/watch?v=JdsgI7lXoNk&t=349s).
+
+
+<br><span class="grey3 size70">📝 Práctica:</span>
+
+**1.** Haz al menos dos ejercicios de [aquí](https://es.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-8a/e/intro-to-integration).
+
+**2.** Haz al menos dos ejercicios con potencia negativa de [aquí](https://es.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-8a/e/basic-integration). 
+
+<br>
+
+### 7b) Propiedades básicas (linealidad)
+
+<br><span class="grey3 size70">🔁 Repaso:</span>
+
+$$
+\int \big(f(x) + g(x)\big)\,dx = \int f(x)\,dx + \int g(x)\,dx
+$$
+
+$$
+\int k \cdot f(x)\,dx = k \cdot \int f(x)\,dx \quad (k \in \mathbb{R})
+$$
+
+<br><span class="grey3 size70">📝 Práctica:</span>
+
+Haz al menos dos ejercicios de [aquí](https://es.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-8a/e/integration).
+
+<br>
+
+### 7c) Simplificar algebraicamente antes de integrar
+
+<br><span class="grey3 size70">🔁 Repaso:</span>
+
+Puedes repasarlo [aquí]().
+
+<br>
+<span hidden>Image</span>
+   <center>![](integr_indef_simplificar_antes.png){width=400px}</center>
+   <center>
+      <span class="grey3 size70"></span>
+      <span class="grey3 size50">Fuente: Khan Academy</span>
+   </center>
+<br>
+
+<br><span class="grey3 size70">📝 Práctica:</span>
+
+Haz **"todos"** los ejercicios de [aquí](https://es.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-8a/e/reverse-power-rule-rewriting).
+
+
+<div hidden>
+
+
+---
+
+---
+
+## 5. Cambio de variables
+
+<br><span class="grey3 size70">🔁 Repaso:</span>
+
+Es una técnica de integración muy poderosa. Consiste en reemplazar la variable original por otra más simple. Formalmente, si $u=g(x)$, entonces:
+
+$$
+\int f(g(x))g'(x)\, dx = \int f(u)\, du
+$$
+
+**Ejemplo:**
+
+$$
+\int 2x\cos(x^2)\, dx
+$$
+
+Hacemos el cambio $u = x^2 \Rightarrow du = 2x\, dx$.
+
+$$
+\int 2x\cos(x^2)\, dx = \int \cos(u)\, du = \sin(u) + C = \sin(x^2) + C
+$$
+
+
+<br><span class="grey3 size70">📝 Práctica:</span>
+
+
+1. $\int x e^{x^2}\, dx$
+2. $\int \frac{1}{x \ln x}\, dx$
+
+
+## 6. Integrales racionales
+
+<br><span class="grey3 size70">🔁 Repaso:</span>
+
+Una **función racional** es el cociente de dos polinomios, por ejemplo:
+
+$$
+\frac{3x^2+1}{x^3+2x}
+$$
+
+Resolver integrales de este tipo no siempre es directo. Una técnica central es la **descomposición en fracciones parciales**, que permite transformar una fracción complicada en la suma de fracciones más simples, cada una integrable.
+
+**Ejemplo:**
+
+$$
+\int \frac{1}{x^2-1}\, dx
+$$
+
+Se factoriza el denominador:
+
+$$
+x^2-1 = (x-1)(x+1)
+$$
+
+Entonces:
+
+$$
+\frac{1}{x^2-1} = \frac{A}{x-1} + \frac{B}{x+1}
+$$
+
+Resolviendo el sistema, $A = \tfrac{1}{2}$, $B = -\tfrac{1}{2}$.
+
+$$
+\int \frac{1}{x^2-1}\, dx = \frac{1}{2}\int \frac{1}{x-1}\, dx - \frac{1}{2}\int \frac{1}{x+1}\, dx
+$$
+
+$$
+= \tfrac{1}{2}\ln|x-1| - \tfrac{1}{2}\ln|x+1| + C
+$$
+
+<br><span class="grey3 size70">📝 Práctica:</span>
+
+1. $\int \frac{2x+3}{x^2+x}\, dx$
+2. $\int \frac{1}{x^2+4x+3}\, dx$
+
+
+
+### 5. Integrales trigonométricas
+
+Aquí aparecen funciones como $\sin^n x$, $\cos^m x$ o productos de senos y cosenos.
+
+Las principales herramientas son:
+
+* Usar **identidades trigonométricas** para simplificar.
+* Reducir potencias con fórmulas como:
+
+  $$
+  \sin^2 x = \frac{1-\cos(2x)}{2}, \quad \cos^2 x = \frac{1+\cos(2x)}{2}
+  $$
+
+**Ejemplo:**
+
+$$
+\int \sin^2 x\, dx
+$$
+
+$$
+= \int \frac{1-\cos(2x)}{2}\, dx = \frac{x}{2} - \frac{\sin(2x)}{4} + C
+$$
+
+**Para practicar:**
+
+1. $\int \sin^3 x \cos x \, dx$
+2. $\int \cos^2 x \, dx$
+
+### 7. Integrales impropias
+
+Son integrales definidas donde el intervalo es infinito o la función presenta discontinuidades.
+
+Dos casos típicos:
+
+1. **Intervalo infinito**
+
+$$
+\int_1^{\infty} \frac{1}{x^2}\, dx
+$$
+
+Se interpreta como un límite:
+
+$$
+\lim_{b\to\infty} \int_1^b \frac{1}{x^2}\, dx = \lim_{b\to\infty} \left[-\frac{1}{x}\right]_1^b
+$$
+
+$$
+= \lim_{b\to\infty}\left(-\frac{1}{b}+1\right) = 1
+$$
+
+2. **Función con discontinuidad**
+
+$$
+\int_0^1 \frac{1}{\sqrt{x}}\, dx
+$$
+
+En $x=0$ la función se “dispara”. Tomamos límite:
+
+$$
+\lim_{\epsilon\to 0^+} \int_\epsilon^1 \frac{1}{\sqrt{x}}\, dx = \lim_{\epsilon\to 0^+} \left[2\sqrt{x}\right]_\epsilon^1
+$$
+
+$$
+= 2 - 0 = 2
+$$
+
+**Para practicar:**
+
+1. $\int_1^{\infty} \frac{1}{x}\, dx$ (¿converge o diverge?)
+2. $\int_{-1}^1 \frac{1}{x^2}\, dx$
+
+---
+
+---
+
+</div>
+
+
+
+
 
 <span hidden>--- Guide End ---</span>
 
