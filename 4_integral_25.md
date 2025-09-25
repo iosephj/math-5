@@ -312,6 +312,21 @@ Puedes repasarlo [aquí]().
 
 Haz **"todos"** los ejercicios de [aquí](https://es.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-8a/e/reverse-power-rule-rewriting).
 
+<br>
+
+### 7d) Integrales con $e^x$, $1/x$, $cos(x)$ y $sen(x)$
+
+<br><span class="grey3 size70">🔁 Repaso:</span>
+
+Puedes repasarlo [aquí](https://www.youtube.com/watch?v=4JwvRi7mQsk&t=456s) y [aquí](https://www.youtube.com/watch?v=nTpYwW5LLq0)
+
+<br><span class="grey3 size70">📝 Práctica:</span>
+
+**1.** Haz estos [ejercicios](https://es.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-8b/e/indefinite-integrals-of-e-x-1-x)
+
+**2.** Haz estos [ejercicios](https://es.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-8b/e/integrating-sin-cos)
+
+
 
 <div hidden>
 
