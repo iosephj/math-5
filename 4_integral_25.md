@@ -327,13 +327,115 @@ Puedes repasarlo [aquí](https://www.youtube.com/watch?v=4JwvRi7mQsk&t=456s) y [
 **2.** Haz estos [ejercicios](https://es.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-8b/e/integrating-sin-cos)
 
 
+<br><br>
+
+
+## Método de integración por sustitución o cambio de variables
+
+<br><span class="grey3 size70">🔁 Repaso:</span>
+
+Se aplica cuando la integral contiene una función compuesta junto con su derivada o parte de ella. Permite cambiar la variable para simplificar la expresión, resolver en la nueva variable y luego volver a la original. Es básicamente el proceso inverso de la regla de la cadena.
+
+<br>
+<span hidden>Image</span>
+   <center>![](integr_indef_variable_sustitution.png){width=400px}</center>
+   <center>
+      <span class="grey3 size70"></span>
+      <span class="grey3 size50">Fuente: Khan Academy</span>
+   </center>
+<br>
+
+Puedes repasarlo [aquí](https://www.youtube.com/watch?v=DzFToJs5CK8&t=312s).
+
+<br><span class="grey3 size70">📝 Práctica:</span>
+
+Resolver estas integrales:
+
+<span hidden>Están en el libro logikamente y Schaum. Khan Academy me perdió un poco y no tiene los métodos de un modo estructurado, no aparecen fracciones simples, por partes, etc. Hay que buscarlos en versiones de otros paises o años y no sé cual elegir.</span>
+
+**1.** $\int \frac{1}{x + 6}\,dx$ (Sugerencia: hacer u = x + 6)
+
+**2.** $\int sen(3x-1)\,dx$
+
+**3.** $\int 2x \cdot e^{x^2}\,dx$
+
+**4.** $\int sen(x) \cdot (cos(x))^2\,dx$
+
+**5.** $\int \frac{1}{x \ln x}\,dx$
+
+**6.** $\int \frac{3x^2}{x^3+3}\,dx$
+
+**7.** $\int (x+1) \cdot e^{(3x^2+2x-1)}\,dx$
+
+<div class="grey3 size80">Algunas respuestas: **1)** ln|x+6| + C; **2)** $-\frac{1}{3} cos(3x-1) + C$; **3)** $e^{x^2} + C$; **4)** $-\frac{1}{3} (cos(x))^3 + C$ 
+</div>
+
+
+<br><br>
+
+
+## Método de integración por partes
+
+<br><span class="grey3 size70">🔁 Repaso:</span>
+
+Este método viene de la regla de la derivada del producto.
+
+<br>
+<span hidden>Image</span>
+   <center>![](integr_indef_por_partes.png){width=400px}</center>
+   <center>
+      <span class="grey3 size70"></span>
+      <span class="grey3 size50">Fuente: Khan Academy</span>
+   </center>
+<br>
+
+Puedes repasarlo [aquí](https://www.youtube.com/watch?v=SiBcAEVH49g).
+
+**Ejemplo:** Queremos: $\int \ln(x) \,dx$
+
+- Forzamos un producto: $\int \ln(x) \cdot 1\,dx$
+- Usamos la fórmula de integración por partes:
+
+$$
+\int f(x) g'(x) \, dx = f(x) g(x) - \int f'(x) g(x)\, dx.
+$$
+
+- Elegimos:
+
+   * $f(x) = \ln(x)$  →  $f'(x) = \tfrac{1}{x}$
+   * $g'(x) = 1$  →  $g(x) = x$
+
+Aplicamos la fórmula:
+
+$\int \ln(x)\cdot 1 \, dx = \ln(x)\cdot x - \int \frac{1}{x}\cdot x \, dx$
+
+$= x\ln(x) - \int 1\, dx$
+
+$= x\ln(x) - x + C$
+
+
+<br><span class="grey3 size70">📝 Práctica:</span>
+
+Calcular:
+
+<span hidden>Los 3 primeros son del libro Schaum resueltos</span>
+
+**1.** $\int x \sin(x) \, dx$
+
+**2.** $\int x e^x \, dx$
+
+**3.** $\int x^2 \ln(x) \, dx$
+
+**4.** $\int x \cos(x) \, dx$
+
+**5.** $\int x \sqrt{1 + x} \, dx$
+
+<div class="grey3 size80">Algunas respuestas: **1)** -x cos(x) + sen(x) + C; **2)** $xe^x - e^x + C$; **3)** $\frac{x^3}{3} ln(x) - \frac{1}{9} x^3 + C$; **4)** $x sen(x) + cos(x) + C$
+</div>
+
+
 
 <div hidden>
-
-
----
-
----
 
 ## 5. Cambio de variables
 
@@ -482,10 +584,6 @@ $$
 
 1. $\int_1^{\infty} \frac{1}{x}\, dx$ (¿converge o diverge?)
 2. $\int_{-1}^1 \frac{1}{x^2}\, dx$
-
----
-
----
 
 </div>
 
